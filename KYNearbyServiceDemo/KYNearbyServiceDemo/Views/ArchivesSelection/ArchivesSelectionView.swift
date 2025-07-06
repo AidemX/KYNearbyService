@@ -104,9 +104,9 @@ struct ArchivesSelectionView: View {
           .foregroundColor(.demo_defaultContent)
 
         Text("""
-You can put some testing files into the \"/\(KYNearbyServiceDemoApp.archivesFolderURL.lastPathComponent)\" folder,
-which is under the app document directory.
-""")
+          You can put some testing files into the \"/\(KYNearbyServiceDemoApp.archivesFolderURL.lastPathComponent)\" folder,
+          which is under the app document directory.
+          """)
         .multilineTextAlignment(.center)
         .font(.demo_small)
         .foregroundColor(.demo_secondaryContent)

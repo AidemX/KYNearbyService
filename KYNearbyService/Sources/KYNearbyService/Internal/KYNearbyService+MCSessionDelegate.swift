@@ -86,11 +86,11 @@ extension KYNearbyService: MCSessionDelegate {
     withError error: Error?
   ) {
     KYLog(.notice, """
-Did finish receiving resource
-  - Name: \(resourceName)
-  - URL: \(String(describing: localURL))
-  - ERROR: \(String(describing: error))
-""")
+      Did finish receiving resource
+        - Name: \(resourceName)
+        - URL: \(String(describing: localURL))
+        - ERROR: \(String(describing: error))
+      """)
 
     var userInfo: [String: Any] = [KYNearbyServiceNotificationUserInfoKey.filename: resourceName]
 
