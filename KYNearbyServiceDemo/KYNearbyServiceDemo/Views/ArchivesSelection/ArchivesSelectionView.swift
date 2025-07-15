@@ -37,8 +37,8 @@ struct ArchivesSelectionView: View {
       _loadArchives()
     }
     .toolbar {
-      ToolbarItemGroup(placement: .confirmationAction) {
-        if !self.filenames.isEmpty {
+      if !self.filenames.isEmpty {
+        ToolbarItem(placement: .confirmationAction) {
           Button(role: .destructive) {
             self.isPresentingDeletionDialog = true
           } label: {
